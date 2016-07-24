@@ -1,0 +1,66 @@
+---
+title: "Knitted Baby Hat Pattern Generator Documentation"
+author: "Schloby"
+date: "24 July 2016"
+output: html_document
+---
+## Introduction
+This app assumes that you would like to knit a baby hit, and that you have the necessary skills to do so. If you don't, you can still generate the pattern and have someone else knit it for you.
+
+If you'd like to learn to knit, or learn one of the techniques used here, please see the links at the bottom of this document.  
+
+## Inputs
+The current version of the app takes 4 inputs from the radio buttons on the left panel. The first displays the pattern in either inches or cm. The other three allow you to select options for the brim, body, and top of the hat. 
+
+
+### Units
+The units radio button selects whether you would like the pattern to display in inches or cm. 
+
+
+### Brim
+The brim is the is very bottom of the hat which frames the face. There are currently 4 options: rolled, and three widths of ribbing. 
+
+The rolled brim is formed by knitting every row, and it rolls up on itself. 
+
+Any kind of ribbing will help the hat grip more closely to the head, as it has a lot of stretch in it. Many people say the medium option (k2 p2) has the best grip, but the choice is mainly aesthetic. 
+
+Future versions may include more options for the brim, such as garter stitch or moss stitch. 
+
+### Body
+
+Currently, there are two options for the body, plain and striped.
+
+Plain is simply stockinette stitch (knit every row in the round). Striped has you change colors every two rows, and reminds you not to cut the yarn each time, but to twist on the inside. 
+
+Both will adjust for a slighly longer body if the rolled brim is selected. 
+
+More options for the body are planned for the future, including eyelet rows, lace, and fair isle patterns. 
+
+### Top
+
+There are currently four options for the top of the hat, plain, i-cord, pom pom and tassle. 
+
+Plain is what it sounds like. The other options provide instructions for how to make each embellishment. 
+
+Future versions may include other embellishments such as ear flaps. 
+
+
+## Pattern abbreviations
+k - knit
+
+p - purl 
+
+k2tog - knit two together [(instructions)](http://www.wikihow.com/Knit-Two-Together)
+
+dpn - double pointed needles
+
+
+## Learn to knit
+To learn to knit, please see [here](http://knitting.about.com/od/learntoknit/a/begin_knit.htm), or use one of many other knitting resources. 
+
+To learn to knit in the round with circular needles, please go [here](http://www.womansweekly.com/knitting/circular-knitting-for-beginners-15611/).
+
+To learn to knit in the round with double pointed needles, please go [here](http://www.stitchdiva.com/tutorials/knitting/on-double-pointed-needles). 
+
+
+
