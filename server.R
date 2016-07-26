@@ -225,5 +225,105 @@ shinyServer(function(input, output) {
                 Bind off in pattern."
         }
     })
+#Documentation   
+
+output$docIntroTitle <- renderUI({ 
+    paste("Introduction")
+    
+})
+
+output$docIntroText <- renderUI({ 
+    HTML(paste("This app assumes that you would like to knit a baby hit, and that you have the 
+               necessary skills to do so. If you don't, you can still generate the pattern and 
+               have someone else knit it for you.", "","If you'd like to learn to knit, or learn 
+               one of the techniques used here, please use of the many free online resources.", 
+               sep="<br/>"))
+   
+})
+output$docInputTitle <- renderUI({ 
+    paste("Inputs")
+    
+})
+
+output$docInputText <- renderUI({ 
+    paste("The current version of the app takes 4 inputs from the radio buttons on the left panel. 
+          The first displays the pattern in either inches or cm. The other three allow you to select 
+          options for the brim, body, and top of the hat.")
+    
+})
+
+output$docUnitsTitle <- renderUI({ 
+    paste("Units")
+    
+})
+
+output$docUnitsText <- renderUI({ 
+    paste("The units radio button selects whether you would like the pattern to display in inches or cm.")
+    
+})
+
+output$docBrimTitle <- renderUI({ 
+    paste("Brim")
+    
+})
+output$docBrimText <- renderUI({ 
+    HTML(paste("The brim is the is very bottom of the hat which frames the face. There are currently 
+               4 options: rolled, and three widths of ribbing. ","", 
+               "The rolled brim is formed by knitting every row, and it rolls up on itself.", "",
+               "Any kind of ribbing will help the hat grip more closely to the head, as it has a lot 
+               of stretch in it. Many people say the medium option (k2 p2) has the best grip, but 
+               the choice is mainly aesthetic. ", "", "Future versions may include more options for 
+               the brim, such as garter stitch or moss stitch.",sep="<br/>"))
+    
+})
+output$docBodyTitle <- renderUI({ 
+    paste("Body")
+    
+})
+
+output$docBodyText <- renderUI({ 
+    HTML(paste("Currently, there are two options for the body, plain and striped.","", 
+               "Plain is simply stockinette stitch (knit every row in the round). Striped 
+               has you change colors every two rows, and reminds you not to cut the yarn each time, 
+               but to twist on the inside.","","Both will adjust for a slighly longer body if the 
+               rolled brim is selected.","","More options for the body are planned for the future, 
+               including eyelet rows, lace, and fair isle patterns.", sep="<br/>"))
+    
+})
+
+output$docTopTitle <- renderUI({ 
+    paste("Top")
+    
+})
+
+output$docTopText <- renderUI({ 
+    HTML(paste("There are currently four options for the top of the hat, plain, i-cord, pom pom 
+               and tassle. ","", "Plain is what it sounds like. The other options provide instructions 
+               for how to make each embellishment.","","Future versions may include other embellishments 
+               such as ear flaps.", sep="<br/>"))
+    
+})   
+
+output$docAbbrevTitle <- renderUI({ 
+    paste("Pattern Abbreviations")
+    
+})
+
+output$docAbbrevText <- renderUI({ 
+    HTML(paste("k - knit","", "p - purl","","k2tog - knit two together","","dpn - double pointed needles", 
+               sep="<br/>"))
+    
+}) 
+# output$docLearnTitle <- renderUI({ 
+#     paste("Learn to Knit")
+#     
+# })
+# 
+# output$docLearnText <- renderUI({ 
+#     HTML(paste("Text 1","", "TExt 2", sep="<br/>"))
+#     
+# }) 
+
+
 }
 )

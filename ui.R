@@ -40,23 +40,46 @@ shinyUI(fluidPage(
 
     # Show a plot of the generated distribution
     mainPanel(
-        h4(htmlOutput("title")),
-        h4(htmlOutput("reqTitle")),
-        htmlOutput("reqs"),
-        h4(htmlOutput("gaugeTitle")),
-        htmlOutput("gauge"),
-        h4(htmlOutput("brimTitle")),
-        htmlOutput("start"),
-        tags$br(),
-        htmlOutput("brim"),
-        h4(htmlOutput("bodyTitle")),
-        htmlOutput("body"),
-        h4(htmlOutput("capTitle")),
-        htmlOutput("cap"),
-        h4(htmlOutput("topTitle")),
-        htmlOutput("top"),
-        tags$br(),
-        htmlOutput("decoration")
+        tabsetPanel(
+          tabPanel("Pattern",
+            h4(htmlOutput("title")),
+            h4(htmlOutput("reqTitle")),
+            htmlOutput("reqs"),
+            h4(htmlOutput("gaugeTitle")),
+            htmlOutput("gauge"),
+            h4(htmlOutput("brimTitle")),
+            htmlOutput("start"),
+            tags$br(),
+            htmlOutput("brim"),
+            h4(htmlOutput("bodyTitle")),
+            htmlOutput("body"),
+            h4(htmlOutput("capTitle")),
+            htmlOutput("cap"),
+            h4(htmlOutput("topTitle")),
+            htmlOutput("top"),
+            tags$br(),
+            htmlOutput("decoration")
+            ),  
+          tabPanel("Documentation", 
+            h3(htmlOutput("docIntroTitle")),
+            htmlOutput("docIntroText"),
+            h3(htmlOutput("docAbbrevTitle")),
+            htmlOutput("docAbbrevText"),
+            h3(htmlOutput("docInputTitle")),
+            htmlOutput("docInputText"),
+            h4(htmlOutput("docUnitsTitle")),
+            htmlOutput("docUnitsText"),   
+            h4(htmlOutput("docBrimTitle")),
+            htmlOutput("docBrimText"),
+            h4(htmlOutput("docBodyTitle")),
+            htmlOutput("docBodyText"),
+            h4(htmlOutput("docTopTitle")),
+            htmlOutput("docTopText")  
+
+            # h3(htmlOutput("docLearnTitle")),
+            # htmlOutput("docLearnText")  
+                   )
+        )
     )
   )
 ))
